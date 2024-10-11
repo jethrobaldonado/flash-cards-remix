@@ -1,4 +1,0 @@
-import type { Plugin } from 'vite';
-import type { PWAPluginContext } from '../types.js';
-export declare function buildWorker(_ctx: PWAPluginContext): Promise<void>;
-export declare function BundlerPlugin(ctx: PWAPluginContext): Plugin;

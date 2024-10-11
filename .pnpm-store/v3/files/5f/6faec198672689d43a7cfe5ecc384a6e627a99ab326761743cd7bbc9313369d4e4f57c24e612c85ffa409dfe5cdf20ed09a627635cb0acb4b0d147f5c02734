@@ -1,3 +1,0 @@
-export declare const id: (name: string) => string;
-export declare const resolve: (id: string) => string;
-export declare const url: (id: string) => string;

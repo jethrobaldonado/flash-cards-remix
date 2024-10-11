@@ -1,3 +1,0 @@
-export const id = (name) => `virtual:${name}`;
-export const resolve = (id) => `\0${id}`;
-export const url = (id) => `/@id/__x00__${id}`;

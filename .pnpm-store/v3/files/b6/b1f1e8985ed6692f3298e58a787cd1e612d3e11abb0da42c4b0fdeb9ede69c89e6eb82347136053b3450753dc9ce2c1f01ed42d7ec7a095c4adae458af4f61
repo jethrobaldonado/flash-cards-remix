@@ -1,4 +1,0 @@
-import type { HMRBroadcaster } from 'vite';
-import type { ResolvedPWAOptions } from './types.js';
-export declare const getWorkerHash: ({ workerBuildDirectory, workerName }: ResolvedPWAOptions) => string;
-export declare const compareHash: (hot: HMRBroadcaster, oldHash: string, newHash: string) => boolean;

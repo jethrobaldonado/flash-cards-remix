@@ -1,3 +1,0 @@
-import type { Plugin } from 'vite';
-import type { PWAOptions, PWAPluginContext } from '../types.js';
-export declare function EntryPlugin(ctx: PWAPluginContext, pwaOptions: Partial<PWAOptions>): Plugin;

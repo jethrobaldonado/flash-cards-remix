@@ -1,9 +1,0 @@
-import { type ParseResult } from './babel.js';
-type RouteModules = {
-    hasLoader: boolean;
-    hasAction: boolean;
-    hasWorkerLoader: boolean;
-    hasWorkerAction: boolean;
-};
-export declare const resolveRouteModules: (ast: ParseResult) => RouteModules;
-export {};

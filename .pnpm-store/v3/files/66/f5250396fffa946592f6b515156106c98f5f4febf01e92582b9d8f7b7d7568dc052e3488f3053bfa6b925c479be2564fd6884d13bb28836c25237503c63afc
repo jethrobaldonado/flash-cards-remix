@@ -1,2 +1,0 @@
-import type { PWAPluginContext } from './types.js';
-export declare function createContext(): PWAPluginContext;
