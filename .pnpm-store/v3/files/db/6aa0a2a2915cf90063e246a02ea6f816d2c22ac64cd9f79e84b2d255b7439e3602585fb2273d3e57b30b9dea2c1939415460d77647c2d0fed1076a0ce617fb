@@ -1,0 +1,15 @@
+import type { DefaultErrorHandler, DefaultFetchHandler, WorkerLoadContext, WorkerRouteManifest } from '@remix-pwa/dev/worker-build.js';
+interface HandleRequestArgs {
+    defaultHandler: DefaultFetchHandler;
+    errorHandler: DefaultErrorHandler;
+    event: FetchEvent;
+    loadContext: WorkerLoadContext;
+    routes: WorkerRouteManifest;
+}
+/**
+ * A FetchEvent handler for Remix.
+ * If the `event.request` has a worker loader/action defined, it will call it and return the response.
+ * Otherwise, it will call the default handler...
+ */
+export declare function handleRequest({ defaultHandler, errorHandler, event, loadContext, routes, }: HandleRequestArgs): Promise<Response>;
+export {};

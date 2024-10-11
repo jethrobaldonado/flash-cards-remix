@@ -1,0 +1,3 @@
+import type { Plugin } from 'vite';
+import type { PWAOptions } from './types.js';
+export declare function remixPWA(pwaOptions?: Partial<PWAOptions>): Plugin[];

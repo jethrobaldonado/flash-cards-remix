@@ -1,0 +1,5 @@
+import { type ParseResult } from './babel.js';
+export declare const resolveRouteWorkerApis: ({ ast, source }: {
+    ast: ParseResult;
+    source: string;
+}) => string;

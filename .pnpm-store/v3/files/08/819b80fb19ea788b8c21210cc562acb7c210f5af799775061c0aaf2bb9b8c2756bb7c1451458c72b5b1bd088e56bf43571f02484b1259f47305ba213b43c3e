@@ -1,0 +1,9 @@
+import * as build from 'virtual:entry-sw';
+declare global {
+    interface ServiceWorkerGlobalScope {
+        __workerManifest: {
+            routes: build.WorkerRouteManifest;
+            assets: string[];
+        };
+    }
+}

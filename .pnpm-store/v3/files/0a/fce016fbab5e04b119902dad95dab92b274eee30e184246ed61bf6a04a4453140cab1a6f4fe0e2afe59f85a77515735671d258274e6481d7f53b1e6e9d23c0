@@ -1,0 +1,5 @@
+import type { ResolvedConfig } from 'vite';
+import type { PWAOptions, ResolvedPWAOptions } from './types.js';
+export declare function resolveOptions(options: Partial<PWAOptions>, viteConfig: ResolvedConfig & {
+    __remixPluginContext?: any;
+}): Promise<ResolvedPWAOptions>;

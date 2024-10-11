@@ -1,0 +1,22 @@
+import type { types as BabelTypes, ParseResult } from '@babel/core';
+import _generate from '@babel/generator';
+import { parse } from '@babel/parser';
+import type { NodePath } from '@babel/traverse';
+import _traverse from '@babel/traverse';
+import * as t from '@babel/types';
+declare const generate: typeof _generate.default;
+declare const traverse: {
+    <S>(parent: BabelTypes.Node, opts: _traverse.TraverseOptions<S>, scope: _traverse.Scope | undefined, state: S, parentPath?: NodePath): void;
+    (parent: BabelTypes.Node, opts?: _traverse.TraverseOptions, scope?: _traverse.Scope, state?: any, parentPath?: NodePath): void;
+    visitors: typeof _traverse.visitors;
+    verify: typeof _traverse.visitors.verify;
+    explode: typeof _traverse.visitors.explode;
+    cheap: (node: BabelTypes.Node, enter: (node: BabelTypes.Node) => void) => void;
+    node: (node: BabelTypes.Node, opts: _traverse.TraverseOptions, scope?: _traverse.Scope, state?: any, path?: NodePath, skipKeys?: Record<string, boolean>) => void;
+    clearNode: (node: BabelTypes.Node, opts?: BabelTypes.RemovePropertiesOptions) => void;
+    removeProperties: (tree: BabelTypes.Node, opts?: BabelTypes.RemovePropertiesOptions) => BabelTypes.Node;
+    hasType: (tree: BabelTypes.Node, type: BabelTypes.Node["type"], denylistTypes?: string[]) => boolean;
+    cache: typeof _traverse.cache;
+};
+export { generate, parse, t, traverse };
+export type { BabelTypes, NodePath, ParseResult };

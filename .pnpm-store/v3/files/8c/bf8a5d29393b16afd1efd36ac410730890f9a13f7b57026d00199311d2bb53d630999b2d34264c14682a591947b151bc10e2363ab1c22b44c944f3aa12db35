@@ -1,0 +1,7 @@
+import type { RouteManifest } from '@remix-run/dev/dist/config/routes.js';
+import type { Plugin } from 'vite';
+import type { PWAPluginContext } from '../types.js';
+export declare const shouldIgnoreRoute: (route: string, patterns: string[]) => boolean;
+export declare const createRouteImports: (routes: RouteManifest, ignoredRoutes?: string[]) => string;
+export declare const createRouteManifest: (routes: RouteManifest, appDirectory: string, ignoredRoutes?: string[]) => Promise<string>;
+export declare function VirtualSWPlugins(ctx: PWAPluginContext): Plugin[];

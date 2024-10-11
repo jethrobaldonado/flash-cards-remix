@@ -1,0 +1,9 @@
+import type { ErrorResponse } from '@remix-run/router';
+/**
+ * Converts an error response to a JSON response.
+ */
+export declare function errorResponseToJson(errorResponse: ErrorResponse): import("@remix-run/server-runtime/dist/responses.js").TypedResponse<any>;
+/**
+ * Checks if a response is a Remix response by checking if it has any `X-Remix` headers.
+ */
+export declare function isRemixResponse(response: Response): boolean;

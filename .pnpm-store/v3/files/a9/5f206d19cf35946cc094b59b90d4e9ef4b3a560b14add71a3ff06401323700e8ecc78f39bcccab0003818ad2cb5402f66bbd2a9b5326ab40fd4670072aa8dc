@@ -1,0 +1,3 @@
+import type { Plugin } from 'vite';
+import type { PWAPluginContext } from '../types.js';
+export declare function LoaderPlugin(ctx: PWAPluginContext): Plugin;
